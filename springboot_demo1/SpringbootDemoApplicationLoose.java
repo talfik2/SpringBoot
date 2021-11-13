@@ -17,14 +17,12 @@ public class SpringbootDemoApplicationLoose {
 		you will have a single object for springboot container and springboot will use that single object for all objects*/
 		LaptopLoose l1 = con.getBean(LaptopLoose.class); // Hey springboot, get an object from the LaptopLoose class!
 		LaptopLoose l2 = con.getBean(LaptopLoose.class);
-		LaptopLoose l3 = con.getBean(LaptopLoose.class);
 		
 		//Laptop l1 = new Laptop();
         	//Laptop l2 = new Laptop();
 		
 		l1.turnOnLaptopLoose();
 		l2.turnOnLaptopLoose();
-		l3.turnOnLaptopLoose();
 	}
 
 }
